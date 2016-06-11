@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lapsa.maven.pom</groupId>
+		<artifactId>javaee7-app-parent</artifactId>
+		<version>1.3.1</version>
+	</parent>
+
+	<groupId>com.lapsa.fin-lib</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0-pre-rc1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Financial Lib</name>
+
+	<modules>
+		<module>core</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- own -->
+			<dependency>
+				<groupId>com.lapsa.fin-lib</groupId>
+				<artifactId>fin-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<scm>
+		<connection>scm:git:https://gitrepo.theeurasia.kz/vadim.isaev/fin-lib.git</connection>
+		<developerConnection>scm:git:https://gitrepo.theeurasia.kz/vadim.isaev/fin-lib.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>gitlab</system>
+		<url>https://gitrepo.theeurasia.kz/vadim.isaev/fin-lib/issues</url>
+	</issueManagement>
+
+</project>
