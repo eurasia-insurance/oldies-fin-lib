@@ -28,4 +28,10 @@ public enum FinCurrency implements FinLocalizationBundleBase {
 	return currency.getSymbol();
     }
 
+    public static final FinCurrency byNumericCode(int numericCode) {
+	for (FinCurrency fc : FinCurrency.values())
+	    if (fc.getNumericCode() == numericCode)
+		return fc;
+	return null;
+    }
 }
