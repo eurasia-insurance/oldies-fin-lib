@@ -9,7 +9,7 @@
 
 	<groupId>com.lapsa.fin-lib</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Financial Lib</name>
@@ -32,7 +32,7 @@
 	<scm>
 		<connection>scm:git:https://gitrepo.theeurasia.kz/lapsa/fin-lib.git</connection>
 		<developerConnection>scm:git:https://gitrepo.theeurasia.kz/lapsa/fin-lib.git</developerConnection>
-		<tag>v1.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
