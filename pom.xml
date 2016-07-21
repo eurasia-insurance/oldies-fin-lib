@@ -9,7 +9,7 @@
 
 	<groupId>com.lapsa.fin-lib</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Financial Lib</name>
