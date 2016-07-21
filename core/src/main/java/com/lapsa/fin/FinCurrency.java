@@ -1,24 +1,24 @@
 package com.lapsa.fin;
 
 import java.util.Currency;
-import java.util.Locale;
 
 public enum FinCurrency implements FinLocalizationBundleBase {
-    KZT("₸", Locale.forLanguageTag("kk"));
+    KZT("₸"),
+    USD("$"),
+    EUR("€"),
+    RUB(null);
 
     private final Currency currency;
-    private final String symbolOverride;
-    private final Locale locale;
+    private final String symbol;
 
     @Override
     public String canonicalName() {
 	return String.format("%1$s.%2$s", this.getClass().getName(), name());
     }
 
-    private FinCurrency(String symbolOverride, Locale locale) {
-	this.symbolOverride = symbolOverride;
+    private FinCurrency(String symbol) {
 	this.currency = Currency.getInstance(this.name());
-	this.locale = locale;
+	this.symbol = symbol;
     }
 
     public int getNumericCode() {
@@ -26,8 +26,8 @@ public enum FinCurrency implements FinLocalizationBundleBase {
     }
 
     public String getSymbol() {
-	if (symbolOverride != null)
-	    return symbolOverride;
+	if (symbol != null)
+	    return symbol;
 	return currency.getSymbol();
     }
 
@@ -37,9 +37,4 @@ public enum FinCurrency implements FinLocalizationBundleBase {
 		return fc;
 	return null;
     }
-
-    public Locale getLocale() {
-	return locale;
-    }
-
 }
