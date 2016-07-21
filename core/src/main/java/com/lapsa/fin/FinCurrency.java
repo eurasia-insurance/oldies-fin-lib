@@ -6,7 +6,8 @@ public enum FinCurrency implements FinLocalizationBundleBase {
     KZT("₸"),
     USD("$"),
     EUR("€"),
-    RUB(null);
+    RUB(null), // is not available in standart unicode fonts for now 21.07.2016
+    ;
 
     private final Currency currency;
     private final String symbol;
