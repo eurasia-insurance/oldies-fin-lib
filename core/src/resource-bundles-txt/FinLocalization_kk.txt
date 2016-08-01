@@ -1,4 +1,4 @@
-com.lapsa.fin.FinCurrency.EUR = Еуро
-com.lapsa.fin.FinCurrency.KZT = Қазақстан теңгесі
+﻿com.lapsa.fin.FinCurrency.EUR = Евро
+com.lapsa.fin.FinCurrency.KZT = Қазақстандық теңге
 com.lapsa.fin.FinCurrency.RUB = Ресей рублі
 com.lapsa.fin.FinCurrency.USD = АҚШ доллары
