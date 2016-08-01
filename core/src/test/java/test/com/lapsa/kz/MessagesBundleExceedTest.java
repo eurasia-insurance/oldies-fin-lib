@@ -28,7 +28,7 @@ public class MessagesBundleExceedTest extends BaseMessagesBundleTest {
 	Locale locale = getLocale(LANG_KK);
 	ResourceBundle resources = getResourceBundle(FinLocalizationBundleBase.BUNDLE_BASENAME, locale);
 	assertThat(resources.getString("com.lapsa.fin.FinCurrency.KZT"),
-		allOf(not(nullValue()), is("Қазақстан теңгесі")));
+		allOf(not(nullValue()), is("Қазақстандық теңге")));
 	testBundle(resources);
     }
 
