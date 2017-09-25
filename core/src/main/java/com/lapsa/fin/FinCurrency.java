@@ -6,7 +6,9 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-public enum FinCurrency implements FinLocalizationBundleBase {
+import com.lapsa.commons.elements.LocalizedElement;
+
+public enum FinCurrency implements LocalizedElement {
     KZT(new Locale("kk", "KZ")), // "₸" is available on locale-kazakh.jar
     USD(Locale.US), // , "$"
     EUR(Locale.GERMANY), // , "€"
