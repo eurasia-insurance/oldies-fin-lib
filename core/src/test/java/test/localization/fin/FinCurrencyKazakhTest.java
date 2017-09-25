@@ -1,6 +1,8 @@
-package test.localization;
+package test.localization.fin;
 
 import com.lapsa.fin.FinCurrency;
+
+import test.localization.ElementsLocalizationTest;
 
 public class FinCurrencyKazakhTest extends ElementsLocalizationTest<FinCurrency> {
 
