@@ -1,8 +1,12 @@
 package com.lapsa.fin;
 
-public interface FinLocalizationBundleBase {
-    public static final String BUNDLE_BASENAME = "FinLocalization";
-    public static final String BUNDLE_VAR = "fin";
+import com.lapsa.commons.elements.LocalizedElement;
 
-    String canonicalName();
+public interface FinLocalizationBundleBase extends LocalizedElement {
+    public static final String BUNDLE_BASENAME = "FinLocalization";
+
+    @Override
+    default String getBundleBaseName() {
+	return BUNDLE_BASENAME;
+    }
 }
