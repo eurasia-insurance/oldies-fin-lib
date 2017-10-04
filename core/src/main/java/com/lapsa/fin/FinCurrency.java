@@ -3,10 +3,10 @@ package com.lapsa.fin;
 import java.text.NumberFormat;
 import java.util.Currency;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.stream.Stream;
 
 import com.lapsa.commons.elements.LocalizedElement;
+import com.lapsa.commons.function.MyObjects;
 
 public enum FinCurrency implements LocalizedElement {
     KZT(new Locale("kk", "KZ")), // "₸" is available on locale-kazakh.jar
@@ -25,16 +25,16 @@ public enum FinCurrency implements LocalizedElement {
     //
 
     private FinCurrency(Locale locale) {
-	Objects.requireNonNull(locale);
-	this.currency = Objects.requireNonNull(Currency.getInstance(name()));
-	this.curencyNumberFormat = Objects.requireNonNull(NumberFormat.getCurrencyInstance(locale));
-	this.customSymbol = Objects.requireNonNull(currency.getSymbol(locale));
+	MyObjects.requireNonNull(locale);
+	this.currency = MyObjects.requireNonNull(Currency.getInstance(name()));
+	this.curencyNumberFormat = MyObjects.requireNonNull(NumberFormat.getCurrencyInstance(locale));
+	this.customSymbol = MyObjects.requireNonNull(currency.getSymbol(locale));
     }
 
     private FinCurrency(Locale locale, char customSymbol) {
-	Objects.requireNonNull(locale);
-	this.currency = Objects.requireNonNull(Currency.getInstance(name()));
-	this.curencyNumberFormat = Objects.requireNonNull(NumberFormat.getCurrencyInstance(locale));
+	MyObjects.requireNonNull(locale);
+	this.currency = MyObjects.requireNonNull(Currency.getInstance(name()));
+	this.curencyNumberFormat = MyObjects.requireNonNull(NumberFormat.getCurrencyInstance(locale));
 	this.customSymbol = String.valueOf(customSymbol);
     }
 
