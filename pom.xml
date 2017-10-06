@@ -19,28 +19,25 @@
 	</modules>
 
 	<properties>
-		<!-- APIs -->
-		<lapsa-commons-lib.version>2.2-SNAPSHOT</lapsa-commons-lib.version>
+		<!-- BOMS -->
+		<lapsa-bom.version>1.0-SNAPSHOT</lapsa-bom.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- BOMS -->
+			<dependency>
+				<groupId>tech.lapsa.lapsa</groupId>
+				<artifactId>lapsa-bom</artifactId>
+				<version>${lapsa-bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!-- own -->
 			<dependency>
 				<groupId>com.lapsa.fin-lib</groupId>
 				<artifactId>fin-core</artifactId>
 				<version>${project.version}</version>
-			</dependency>
-			<!-- internal lapsa-commons -->
-			<dependency>
-				<groupId>tech.lapsa.lapsa</groupId>
-				<artifactId>lapsa-commons</artifactId>
-				<version>${lapsa-commons-lib.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>tech.lapsa.lapsa</groupId>
-				<artifactId>lapsa-commons-test</artifactId>
-				<version>${lapsa-commons-lib.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
