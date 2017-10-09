@@ -21,6 +21,6 @@ public class FinCurrencyXmlAdapter extends XmlAdapter<Integer, FinCurrency> {
     public Integer marshal(FinCurrency v) throws Exception {
 	if (v == null)
 	    return null;
-	return v.getNumericCode();
+	return v.getCurrency().getNumericCode();
     }
 }
