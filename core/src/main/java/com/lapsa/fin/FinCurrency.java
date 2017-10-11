@@ -5,8 +5,8 @@ import java.util.Currency;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import com.lapsa.commons.elements.LocalizedElement;
-import com.lapsa.commons.function.MyObjects;
+import tech.lapsa.java.commons.function.MyObjects;
+import tech.lapsa.java.commons.localization.LocalizedElement;
 
 public enum FinCurrency implements LocalizedElement {
     KZT(new Locale("kk", "KZ")), // "₸" is available on locale-kazakh.jar
