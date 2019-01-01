@@ -12,7 +12,7 @@
 	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Financial Lib</name>
+	<name>Oldies Lib : Financial Lib</name>
 
 	<modules>
 		<module>core</module>

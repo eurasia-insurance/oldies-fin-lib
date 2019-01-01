@@ -10,7 +10,7 @@
 	<artifactId>fin-core</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Financial Lib : Core POJOs</name>
+	<name>Oldies Lib : Financial Lib : Core POJOs</name>
 
 	<dependencies>
 		<!-- tech -->
